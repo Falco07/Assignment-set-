@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="five.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    
+        <nav class="navBar">
+            <span class="logoContainer">
+                <a href="#" class="logo"><img src="./Assets/images/wppusher-logo copy.png"/>
+            </span>
+           
+            <ul class="navLinks">
+                <li class="list_item"><a href="#">Download</a> </li>
+                <li class="list_item"><a href="#">Learn More</a> </li>
+                <li class="list_item"><a href="#">Pricing</a> </li>
+                <li class="list_item"><a href="#">Help</a> </li>
+                <li><button class="navButton">Account</button></li>
+            </ul>
+           
+        </nav>
+
+
+    </header>
+    <main>
+
+        <form>
+            <div class="formHeader">
+                <h2>Checkout</h2>
+            </div>
+            <fieldset class="basicInfo">
+                <legend><span class="circle">1</span>Your Basic Information</legend>
+
+                <div class="name-info">
+                    <div class="firstName">
+                        <label>First name
+                            <input type="text" placeholder="Enter First Name">
+                        </label>
+                    </div>
+                <div class="lastNAme">
+                    <label>Last Name
+                        <input type="text" placeholder="Enter Last Name">
+                    </label>
+                </div>
+                
+            </div>
+            <div class="email-info">
+                <label>Email
+                    <input type="email" placeholder="Enter Email">
+                </label>
+            </div>
+            </fieldset>
+
+
+    
+                <fieldset class="credit-card-form">
+                    <legend><span class="circle">2</span>Your Payment Information</legend>
+                    <div class="cardInfo">
+
+                    <label for="card-number" >Card Number</label>
+
+                    <div class="input-group">
+                      <input type="text" id="card-number" placeholder="Card Number" required maxlength="19">
+                      <input type="text" id="exp-date" placeholder="MM/YY" required maxlength="5">
+                      <input type="text" id="cvv" placeholder="CVV" required maxlength="3">
+                    </div>
+                </div>
+                    
+                </fieldset>
+
+
+                <div class="button">
+                    <button>Buy WP pusher</button>
+                 </div>
+                 <div class="lower-text">
+                 <p>Need any help? <a href="#">Don’t hesitate to contact support!</a> </p>
+                </div>
+                <div class="tag">
+                    <p>powered by <b>Stripe</b></p>
+                </div>
+            </form>
+        
+
+                <!-- aside -->
+
+                <aside class="sidebar">
+             <div class="plan">
+                    <h2>Freelancer</h2>
+                    <p><span class="currency">$</span><span class="planS">99</span>/year</p>
+                    <p class="italic"><i>Automatically renew after 1 year</i></p>
+             </div>
+             <div class="details">
+                <ul class="list">
+                    <li><i class="fa-regular fa-circle-check"></i>Use on 5 client sites</li>
+                     <li><i class="fa-regular fa-circle-check"></i>Private repositories</li>
+                      <li><i class="fa-regular fa-circle-check"></i>Email support</li>
+                    </ul>
+                    </div>
+                    <div class="switch">
+                      <p>Need <b>20</b> client sites?</p>
+                      <p class="bold">Switch to the Agency Plan</p>
+                    </div>
+                    <div class="quote">
+                    <p>FTP is horrible to deal with.<b> WP Pusher</b> solves that issue, and the customer support is awesome!</p>
+                </div>
+                <div class="profile">
+                    <div class="image">
+                    <img src="./Assets/images/Bitmap.png" alt="picture"/>
+                </div>
+                    <p>Kirk Beard</p>
+                </div>
+            
+                </aside>
+        
+    </main>
+  
+      
+</body>
+</html>

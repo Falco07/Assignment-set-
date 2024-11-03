@@ -18,7 +18,7 @@ body{
     padding: 30px;
 }
 .card{
-    max-width: 400px;
+    width: 300px;
     background: white;
     margin: 0px auto;
     position: relative;
@@ -29,6 +29,7 @@ body{
     justify-content: center;
     align-self: center;
     border-radius: 8px;
+    object-fit: cover;
 }
 img{
     width: 100%;

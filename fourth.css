@@ -3,30 +3,64 @@
     margin: 0px;
     padding: 0px;
 }
+body{
+    font-family: Arial, sans-serif;
+    background: rgba(247, 253, 252, 1);
+    display: flex;
+    padding: 1em;
+}
+a{
+    color: #2EC4B6;
+}
+.hero{
+    width: 35%;
+    padding: 1em;
+    min-width: 350px;
+    margin:0 auto;
+    align-content: center;
+}
+.logo{
+    width: 70px;
+}
+.text {
+    text-align: justify;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+.text p{
+color: rgba(115, 115, 115, 1);
+margin-top: 1em;
+}
 
 button {
     background: #2EC4B6;
-    padding: 20px;
-    border-color:#2EC4B6;
+    padding: 1em;
     width: 100%;
-    font-size: 14px;
+    font-size: 16px;
     color: #ffffff;
-    border: 0px;
+    border: none;
     border-radius: 6px;
     cursor: pointer;
+    margin-top: 1em;
+    font-family: "Sofia Sans", sans-serif;;
+    margin: 0 auto;
+    max-width: 600px;
 }
 
 input, select {
     background: #ffffff;
-    padding: 10px;
+    padding: 1em;
     width: 100%;
-    border: 2px solid #e4e4e4;
+    border: 1px solid #e4e4e4;
     border-radius: 6px;
+    margin-top: 10px;
+    color: rgba(115, 115, 115, 1);
+
     transition: background-color 0.3s, border-color 0.3s;
 }
-input :hover {
+/* input :focus {
     border-color:#2EC4B6;
-}
+} */
 .label_container input:focus,
 .label_container select:focus {
     border-color:#2EC4B6;
@@ -36,66 +70,84 @@ input :hover {
 img{
     width: 100%;
 }
-body{
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-block: 2em;
-    background: rgb(254, 246, 246);
-}
-.hero{
-    width: 30%;
-    padding: 2em 0px;
-    min-width: 350px
-}
-.logo{
-    width: 50px;
-}
-.text{
-    padding: 1em;
-    text-align: justify;
-    line-height: 1.5;
-}
+
 form{
-    padding: 2em;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-}
-.input_container{
+    padding: 1em;
     width: 100%;
     max-width: 650px;
     display: flex;
-    background: #fcfcfc;
-    padding: 20px;
+    margin: 0 auto;
+    align-content: center;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, 1);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .label_container {
-    width: 90%;
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    gap: 1em;
+    padding: 1em;
+    margin: 0 auto;
 }
 .label {
-    display: block;
     width: 100%;
-    gap: 1em;
+    color: rgba(1, 28, 52, 1);
+font-family: "Sofia Sans", sans-serif;
+font-weight: bold;
 }
+.label + .label{
+    margin-left: 1em;
+}
+.lowerText{
+    padding: 1em;
+    margin: 0 auto;
+    font-size: 11px;
+    align-self: center;
+    font-family: "Sofia Sans", sans-serif;
+}
+
+
+
 @media (max-width: 600px) {
-    .label_container {
-        padding: 10px;
+    form{
+        width: 90%;
+        padding-block-end: 0.4em;
+    }
+    body{
         display: flex;
         flex-direction: column;
     }
-
+    .label_container {
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .logo{
+        width: 40px;
+    }
+    .text p{
+        color: rgba(115, 115, 115, 1);
+        margin-top: 0.5em;
+    }
+    input ,
+    select{
+        width: 100%;
+    }
+    .label + .label{
+        margin-left: 0px;
+        margin-top: 1em;
+    }
     h1 {
         font-size: 20px;
     }
-}
-a{
-    color: #2EC4B6;
+    .lowerText{
+        padding: 1em;
+        margin: 0 auto;
+        line-height: 2;
+        font-size: 10px;
+        font-family: "Sofia Sans", sans-serif;
+    }
 }

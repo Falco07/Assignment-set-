@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="fourth.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -18,17 +21,18 @@
         <p>Start benefiting from the wellness experience. For companies looking on increasing productivity, and improving organization wellness.</p>
     </div>
 </div>
-<div class="input_container">
+
+<!-- <div class="input_container"> -->
         <form action="" method="post">
           
 
-                <div class="label_container">
+                <div class="label_container" id="names">
                     <label class="label">First Name
                         <input type="text" name="Name" placeholder="Enter First Name" required>
-                    </label class="label">
+                    </label >
                     <label class="label">Last Name
                         <input type="text" name="name" placeholder="Enter Last Name" required>
-                    </label class="label">
+                    </label>
 
                 </div>
                 <div class="label_container">
@@ -43,10 +47,10 @@
                     </label class="label">
                 </div>
                 <div class="label_container">
-                    <label class="label">Weight(KG)
+                    <label class="label">Weight(kg)
                         <input type="text" placeholder="Enter Weight here">
                     </label class="label">
-                    <label class="label" for="Phone">Height(CM)
+                    <label class="label" for="Phone">Height(cm)
                         <input type="text" placeholder="Enter Height here">
                     </label class="label">
                 </div>
@@ -54,8 +58,8 @@
                 <div class="label_container">
                     <label class="label">Activity Level
                         <select name="Reference" id="Reference">
-                            <option value="choose channel">Choose Channel</option>
-                            <option name="level" value="Master">Masterk</option>
+                            <option value="choose level">Choose Level</option>
+                            <option name="level" value="Master">Master</option>
                             <option name="level" value="Noob">Noob</option>
                             <option name="level" value="Beginner">Beginner</option>
                             <option name="level" value="Bot">Bot</option>
@@ -67,16 +71,16 @@
                         <input type="password" placeholder="Enter Password" required>
                     </label class="label">
                 </div>
-
-
-            <p>By clicking continue, I agree to <a href="">Terms of Use</a> and acknowledge that I
-                have read the <a href="">Privacy Policy</a></p>
-            <button type="submit">Submit</button>
+            
+            <button type="submit">Register</button>
 
             <!--<Button type="Reset">Reset</Button>-->
-
+            <div class="lowerText">
+                <p>By clicking continue, I agree to <a href="">Terms of Use</a> and acknowledge that I
+                    have read the <a href="">Privacy Policy</a></p>
+                </div>
         </form>
-    </div>
+
 
     
 </body>

@@ -1,0 +1,256 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body{
+    font-family: "Lato", sans-serif;
+    background: #F5F8FA;
+}
+main{
+    display: flex;
+    align-content: center;
+    padding: 2em;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+} 
+.navBar {
+  width: 90%;
+  padding: 1em;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+}
+.navLinks {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  max-width: 476px;
+}
+.navLinks a {
+  text-decoration: none;
+  color: #1d2c3c;
+}
+.navButton{
+    padding: 0.5em 1em; 
+    text-align: center;
+   color: black;
+   background:none;
+   border: 2px solid black;
+   border-radius: 4px;
+   font-weight: 700;
+   font-size: 18px;
+}
+.navLinks li {
+  margin-left: 15px;
+}
+.logoContainer {
+  width: 20%;
+}
+img {
+  width: 100%;
+}
+form{
+    max-width: 600px;
+    background: white;
+    padding: 2em;
+    width: 50%;
+    border-radius: 4px 0 0 4pxb;
+}
+.formHeader {
+  width: max-content;
+  align-content: flex-start;
+  padding: 2em 0;
+}
+.basicInfo{
+    width: 580px;
+}
+input{
+    width: 81%;
+    padding: 0.8em;
+    margin-top: 1em;
+    border: none;
+    border-radius: 4px;
+    background: #ddd;
+}
+.name-info{
+    display: flex;
+    gap: 1em;
+    margin-top: 1em;
+}
+fieldset{
+    border: none;
+    margin: 0 auto;
+}
+.email-info{
+    margin-top: 1em;
+}
+.email-info input{
+    width: 60%;
+    display: flex;
+}
+legend{
+    font-size: 20px;
+}
+.circle {
+    display: inline-block;
+    width: 40px;           /* Set the width */
+    height: 40px;          /* Set the height */
+    border-radius: 50%;    /* Makes it a circle */
+    border: 2px solid #548BC5; /* Circle background color */
+    color:black;          /* Text color */
+    text-align: center;    /* Centers text horizontally */
+    line-height: 40px;     /* Centers text vertically (same as height) */
+    font-size: 20px;       /* Font size */
+    font-weight: bold;     /* Optional: Bold text */
+    margin-right: 0.5em;
+  }
+
+
+/* credit card */
+.cardInfo{
+    width: 580px;
+    margin-top: 1em;
+}
+.credit-card-form{
+    margin-top: 1em;
+    margin-inline: auto;
+    width: max-content;
+}
+.cardHead{
+    margin-top:2em;
+}
+
+
+.input-group{
+    width: 90%;
+    display: flex;
+}
+#card-number{
+    border-radius: 4px 0 0 4px ;
+    border: none;
+    width: 50%;
+    background: #ddd;
+}
+#exp-date{
+    width: 20%;
+    border: none;
+    border-radius: 0px;
+    background: #ddd;
+}
+#cvv{
+    width: 16%;
+    border-radius: 0 4px 4px 0;
+    border: none;
+    background: #ddd;
+}
+.button{
+    width: 100%;
+    margin-top: 2em;
+    margin-inline:  auto;
+}
+button{
+    width: 90%;
+    padding: 0.8em;
+    margin: 0 auto;
+    background: #038E7D;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+}
+.lower-text{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 1em;
+}
+.tag{
+    width: 92px;
+    margin: 0px auto;
+    width: fit-content;
+    margin-top: 20px;
+    background: #ddd;
+    color: white;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+.sidebar{
+    width: 20%;
+    background: rgba(17, 121, 191, 1);
+    padding: 2em;
+    color: white;
+    border-radius: 0 4px 4px 0;
+}
+
+.currency {
+    font-size: 18px;      
+    vertical-align: top;
+    margin-right: 2px;   
+}
+.plan h2{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.planS{
+    font-size: 4em;
+}
+.italics{
+    font-style: italic;
+}
+.details{
+    margin-top: 2em;
+}
+.list{
+    list-style:none;
+}
+.list li::before {
+    content: "\f058";        /* Font Awesome check-circle icon code */
+    font-family: "Font Awesome 6 Free"; /* Font Awesome family name */
+    font-weight: 900;
+    color: #4caf50;
+    margin-right: 8px;       /* Space between icon and text */
+}
+.list li + li{
+    margin-top: 1em;
+}
+.switch{
+    margin-block:  2em;
+}
+.switch p + p{
+    margin-block: 0.6em;
+}
+.bold{
+    font-weight: 900;
+}
+.quote{
+    padding: 2em 0;
+    margin: 0 auto;
+    font-style: italic;
+    line-height: 1.4;
+    text-align: justify;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.profile{
+    display: flex;
+    gap: 10px;
+}
+.profile p{
+    align-self: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+.image{
+    width: 40px;
+    border-radius: 50%;
+}
+img{
+    width: 100%;
+    border-radius: 50%;
+}
+ 
+
+  
