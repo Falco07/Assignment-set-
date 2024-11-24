@@ -19,10 +19,13 @@ a{
 button{
     width: 300px;
     padding: 15px 20px;
-    background: yellow;
+    background: rgb(60, 255, 0);
     font-size: 18px;
     font-weight: 800;
     text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
 }
 a + a {
     margin-top: 1em;
