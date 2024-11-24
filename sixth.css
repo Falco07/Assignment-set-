@@ -39,6 +39,25 @@ span {
 .list_item_one {
   color: #005ae2;
 }
+.list{
+  transition: 0.7s ease;
+}
+.list :hover{
+  color: #005ae2;
+}
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
 .nav_select {
   width: 100%;
   color: #222222;
@@ -529,4 +548,138 @@ img {
   gap: 10px;
   width: 25%;
   flex-direction: column;
+}
+
+
+@media (max-width: 768px){
+  .hamburger{
+    display: block;
+  }
+  .hamburger .active .bar :nth-child(2){
+    opacity:0;
+  }
+  .hamburger .active .bar :nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger .active .bar :nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .list{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    background: black;
+  }
+  .list_item{
+    margin: 1em 0;
+  }
+  .list .active{
+    left: 0;
+  }
+  .header{
+    padding: 0;
+    margin: 0 auto;
+  }
+  .nav_buttons{
+    display: none;
+  }
+  .vector{
+    display: none;
+  }
+  .hero_text{
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .hero_text h1{
+    width: 100%;
+    font-size: 26px;
+    text-align: center;
+  }
+  .hero_text p{
+    width: 80%;
+    font-size: 14px;
+  }
+  .hero_button{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+  }
+  .but_two{
+    width: 50%;
+    font-size: 12px;
+  }
+  .hero_button p{
+    width: max-content;
+  }
+  .hero_images{
+    display: none;
+  }
+  .container{
+    margin: 0 auto;
+    width: 90%;
+    padding: 0px;
+  }
+  .container_header{
+    font-size: 18px;
+  }
+  .stat h2{
+    font-size: 18px;
+  }
+  .second_container{
+    width: 90%;
+    margin: 2em auto;
+    padding: 0;
+  }
+  .why{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .why_right{
+    display: flex;
+    width: 100%;
+  }
+  .card_section{
+    width: 90%;
+    padding: 0;
+    margin: 4em auto;
+  }
+  .subheader{
+    margin: 0 auto;
+    width: 90%;
+    padding: 0px;
+  }
+  .subheader h1{
+    width: 100%;
+    text-align: center;
+  }
+  .cards{
+    display: flex;
+    gap: 2em;
+  }
+  .buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .last_header button{
+    width: 200px;
+  }
+  footer{
+    width: 90%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .links{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
