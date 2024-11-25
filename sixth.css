@@ -549,31 +549,31 @@ img {
   width: 25%;
   flex-direction: column;
 }
+.navigation--open{
+  transform: translate(0) !important;
+}
 
 
 @media (max-width: 768px){
   .hamburger{
     display: block;
   }
-  .hamburger .active .bar :nth-child(2){
-    opacity:0;
-  }
-  .hamburger .active .bar :nth-child(1){
-    transform: translateY(8px) rotate(45deg);
-  }
-  .hamburger .active .bar :nth-child(3){
-    transform: translateY(-8px) rotate(-45deg);
+  header{
+    width: 100%;
   }
   .list{
-    position: fixed;
-    left: -100%;
-    top: 70px;
-    gap: 0;
+    top: 40px;
+    padding:1em;
+    background: black;
+    display: flex;
     flex-direction: column;
+    position: fixed;
+    color: white;
+    right: 0px;
     width: 100%;
     text-align: center;
-    transition: 0.3s;
-    background: black;
+    transform: translateX(-100%);
+    z-index: 1;
   }
   .list_item{
     margin: 1em 0;
