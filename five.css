@@ -21,12 +21,16 @@ main{
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid grey;
+  min-height: 40px;
+
 }
+
 .navLinks {
   display: flex;
   list-style: none;
   align-items: center;
-  max-width: 476px;
+  width: 476px;
+  transition: all 0.5s ease-in-out;
 }
 .navLinks a {
   text-decoration: none;
@@ -250,6 +254,60 @@ button{
 img{
     width: 100%;
     border-radius: 50%;
+}
+.hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  .navLinks--open{
+    transform: translate(0) !important;
+}
+
+@media (max-width:650px){
+    .hamburger{
+        display: block;
+      }
+      .navLinks{
+            top: 40px;
+            padding:1em;
+            background: #ededed;
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            right: 0px;
+            width: 100%;
+            text-align: center;
+            transform: translateX(-100%);
+      }
+      header{
+        display: flex;
+      }
+      main{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
+      .sidebar{
+        width: 100%;
+        text-align: center;
+      }
+      form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .name-info{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+      }
+      input{
+        width: 50%;
+      }
+      .input-group{
+        width: 50%;
+      }
 }
  
 
